@@ -35,6 +35,7 @@ def pushZerosToEnd(arr, n):
     while count < n: 
         arr[count] = 0
         count += 1
-        
+    return arr
+print(pushZerosToEnd([1,0,2,0,3],5))        
    
         
