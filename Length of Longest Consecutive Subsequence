@@ -35,3 +35,19 @@ findLongestConseqSubseq([1,5,6,8,9,4,0,1])
 
 # why not sort it first then save it, calculate length? save time for sorting
 # time complexity: it is O(n) under the assumption that hash insert and search take O(1) time.
+########################################################
+m=[]
+a=[1,5,6,8,9,4,0,1]
+for x in a:
+    m.append(x)
+m  
+# [1, 5, 6, 8, 9, 4, 0, 1]
+
+############################################################
+m=set()
+a=[1,5,6,8,9,4,0,1]
+for x in a:
+    m.add(x)
+m   
+# {0, 1, 4, 5, 6, 8, 9}
+# when using set it automatically dedupe and sort
