@@ -11,7 +11,7 @@ def findLongestConseqSubseq(arr):
     # then update optimal length 
     for i in range(n): 
   
-         # if current element is the starting 
+         # check if current element is the starting position of the consecutive sequence
         # element of a sequence 
         if (arr[i]-1) not in s: 
   
