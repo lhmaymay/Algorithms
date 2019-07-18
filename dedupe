@@ -21,3 +21,12 @@ for c in foo:
         result.append(c)
         seen.add(c)
 result = ''.join(result)
+
+
+seen=set()
+result=[]
+foo=[1,2,3,2,1,4]
+for c in foo:
+    if c not in seen:
+        result.append(c)
+        seen.add(c)
