@@ -1,0 +1,6 @@
+channel date num_users
+a        1    100
+a        2    110
+a        3    150
+
+# define metric as (% change in number_users at date m vs. date 1)
