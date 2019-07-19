@@ -14,7 +14,7 @@
 
 
 
-# algorithm to calculate item similarity based on product description (text data)
+# algorithm to calculate item similarity based on product description (text data) of a new item comparing to other items of same product category.
 # create feature vector based on text description to count number of times , a work showed up in a string
 
 i1="this is a shirt"
