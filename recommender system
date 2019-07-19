@@ -1,3 +1,19 @@
+#Types of Recommender Systems
+#There are two major approaches to build recommender systems: Content-Based Filtering and Collaborative Filtering:
+
+#Content-Based Filtering
+#In content-based filtering, the similarity between different products is calculated on the basis of the attributes of the products.
+#For instance, in a content-based movie recommender system, the similarity between the movies is calculated on the basis of genres, 
+#the actors in the movie, the director of the movie, etc.
+
+#Collaborative Filtering
+#Collaborative filtering leverages the power of the crowd. 
+#The intuition behind collaborative filtering is that if a user A likes products X and Y, and 
+#if another user B likes product X, there is a fair bit of chance that he will like the product Y as well.
+
+
+
+
 # algorithm to calculate item similarity based on product description (text data)
 # create feature vector based on text description to count number of times , a work showed up in a string
 
