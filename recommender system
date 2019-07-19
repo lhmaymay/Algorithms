@@ -1,0 +1,28 @@
+# algorithm to calculate item similarity based on product description (text data)
+# create feature vector based on text description to count number of times , a work showed up in a string
+
+i1="this is a shirt"
+i2="is one shirt"
+i3="this is more than a shirt"
+inputs=(i1+' '+i2+' '+i3).split()
+print(inputs)
+s=set()
+# to dedupe you need to use set
+for x in inputs:
+    if x not in s:
+        s.add(x)
+print(s)
+m=list(s)
+print(m)
+import numpy as np
+x=np.zeros([3,7])
+for i in range(len(m)):
+    x[0][i]=list(i1.split()).count(m[i])
+    x[1][i]=list(i2.split()).count(m[i])
+    x[2][i]=list(i3.split()).count(m[i])
+print(x)
+
+['this', 'one', 'more', 'shirt', 'a', 'than', 'is']
+[[1. 0. 0. 1. 1. 0. 1.]
+ [0. 1. 0. 1. 0. 0. 1.]
+ [1. 0. 1. 1. 1. 1. 1.]]
