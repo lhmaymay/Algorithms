@@ -42,3 +42,7 @@ print(x)
 [[1. 0. 0. 1. 1. 0. 1.]
  [0. 1. 0. 1. 0. 0. 1.]
  [1. 0. 1. 1. 1. 1. 1.]]
+
+
+# Text Similarities : Estimate the degree of similarity between two texts
+# https://medium.com/@adriensieg/text-similarities-da019229c894
