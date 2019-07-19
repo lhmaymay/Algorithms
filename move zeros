@@ -39,7 +39,22 @@ print(pushZerosToEnd([1,0,2,0,3]))
 # [1,2,3,0,0]
 
 
-
+#move zeros to the left
+def MoveZeroToLeft(a):
+    c=0
+    for i in range(len(a)):
+        if a[i]==0:
+            c+=1
+    count=c
+    for i in range(len(a)-1,-1,-1):
+        if a[i]!=0:
+            a[len(a)-1-count+c]=a[i]
+            count+=1
+    for i in range(c):
+        a[i]=0
+    return a
+MoveZeroToLeft([1,0,5,6,0,8,0])
+[0, 0, 0, 1, 5, 6, 8]
 
 
 
