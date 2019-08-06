@@ -9,7 +9,7 @@ df = lambda x: 2*(x+5) #Gradient of our function
 
 while previous_step_size > precision and iters < max_iters:
     prev_x = cur_x #Store current x value in prev_x
-    cur_x = cur_x - rate * df(prev_x) #Grad descent
+    cur_x = prev_x - rate * df(prev_x) #Grad descent
     previous_step_size = abs(cur_x - prev_x) #Change in x
     iters = iters+1 #iteration count
     print("Iteration",iters,"\nX value is",cur_x) #Print iterations
