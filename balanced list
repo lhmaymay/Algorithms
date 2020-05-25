@@ -1,0 +1,10 @@
+ Balanced List
+
+Given a non-empty list of integers, return TRUE if there is a place to split the list so that the sum of the numbers on one side is equal to the sum of the numbers on other side.
+The order of the elements in the list should not be changed.
+
+For example: 
+
+List(1, 5, 3, 3) returns TRUE -> balanced list: 1+ 5 == 3 + 3
+List(7, 3, 4) returns TRUE -> balanced list: 7 == 3 + 4
+List(1, 3, 5) returns FALSE
