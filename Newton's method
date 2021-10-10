@@ -1,0 +1,11 @@
+def f(x):
+    return x*x*x-x*x+2
+def dr(x):
+    return 3*x*x-2*x
+print(f(3),dr(3))
+def nt(x,tol,maxn):
+    for i in range(maxn+1):
+        while abs(f(x)/dr(x))>tol:
+            x=x-f(x)/dr(x)
+            print(x)
+nt(-20,0.0001,10)
