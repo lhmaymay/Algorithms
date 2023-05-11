@@ -15,7 +15,7 @@ def fb(n):
         return x[n]
 
 
-# method 2: Recursive function
+# method 2: Recursion function
 def fb(n):
     if n<=1:
         return n
